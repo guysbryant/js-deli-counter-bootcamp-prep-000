@@ -20,8 +20,6 @@ function currentLine(line){
       list += `${i + 1}. ${line[i]}`;
       if (i < line.length){
         list += ', ';
-      }else{
-        list += ' ';
       }
     }
     return list.trim();
