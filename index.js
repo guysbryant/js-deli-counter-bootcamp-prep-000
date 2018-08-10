@@ -19,7 +19,7 @@ function currentLine(line){
     for (var i = 0; i < line.length; i++){
       list += `${i + 1}. ${line[i]}`;
       if (i < line.length){
-        list += ',';
+        list += ', ';
       }else{
         list += ' ';
       }
