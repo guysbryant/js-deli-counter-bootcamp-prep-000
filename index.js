@@ -18,7 +18,7 @@ function currentLine(line){
     var list = 'The line is currently: ';
     for (var i = 0; i < line.length; i++){
       list += `${i + 1}. ${line[i]}`;
-      if (i < line.length){
+      if (i + 1 < line.length){
         list += ', ';
       }
     }
