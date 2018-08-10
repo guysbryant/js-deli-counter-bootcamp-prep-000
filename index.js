@@ -17,8 +17,13 @@ function currentLine(line){
   }else {
     var list = 'The line is currently: ';
     for (var i = 0; i < line.length; i++){
-      list += `${i + 1}. ${line[i]}, `;
+      list += `${i + 1}. ${line[i]}`;
+      if (i < line.length){
+        list += ',';
+      }else{
+        list += ' ';
+      }
     }
-    return list;
+    return list.trim();
   }
 }
