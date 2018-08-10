@@ -19,6 +19,6 @@ function currentLine(line){
     for (var i = 0; i < line.length; i++){
       list += `${i + 1}. ${line[i]}, `;
     }
-    return list;
+    return list.splice(-1,1);
   }
 }
